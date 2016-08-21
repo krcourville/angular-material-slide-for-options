@@ -1,5 +1,5 @@
-# Angular Material Slide for Options Component
+# Angular Material "Swipe for Options" Component
 
-A re-usable slide-for-options component.
+A re-usable md-swipe-for-options component.
 
 
