@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "typings": "typings install && typings prune",
+    "setup": "npm install && npm run typings",
     "test": "test",
     "validate-webpack:dev": "webpack-validator webpack.config.js --env.dev",
     "validate-webpack:prod": "webpack-validator webpack.config.js --env.prod",
