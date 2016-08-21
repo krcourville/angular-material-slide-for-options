@@ -1,0 +1,9 @@
+{
+  "extends": "tslint:recommended",
+  "rules" : {
+    "trailing-comma": false,
+    "no-consecutive-blank-lines": false,
+    "eofline": false,
+    "interface-name": false
+  }
+}
