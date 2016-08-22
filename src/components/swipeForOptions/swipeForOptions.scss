@@ -1,36 +1,71 @@
-.swipe-options-container {
-  position: relative;
-  overflow: hidden;
+md-swipe-for-options {
 
-  .swipe-content {
+  .swipe-options-container {
     position: relative;
-    transition: 0.5s ease-in-out;
+    overflow: hidden;
 
-    &.options-shown {
-      transform: translateX(-50%);
+    .swipe-content {
+      position: relative;
+      transition: 0.5s ease-in-out;
+
+      &.options-shown {
+
+      }
     }
+
+    .swipe-options {
+      color: white;
+      transition: 0.5s ease-in-out;
+      height: 100%;
+      width: 0;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &, * {
+        white-space: nowrap;
+      }
+
+      swipe-options {
+        height: 100%;
+      }
+    }
+
   }
 
-  .swipe-options {
-    color: white;
-    transition: 0.5s ease-in-out;
-    height: 100%;
-    width: 0;
+  &.one-button {
 
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    &, * {
-      white-space: nowrap;
+    .swipe-content.options-shown {
+      transform: translateX(-16%);
     }
 
-    &.options-shown {
+    .swipe-options.options-shown {
+        width: 16%;
+    }
+
+  }
+
+  &.two-button {
+
+    .swipe-content.options-shown {
+      transform: translateX(-32%);
+    }
+
+    .swipe-options.options-shown {
+      width: 32%;
+    }
+
+  }
+
+  &.three-button {
+
+    .swipe-content.options-shown {
+      transform: translateX(-50%);
+    }
+
+    .swipe-options.options-shown {
       width: 50%;
-    }
-
-    swipe-options {
-      height: 100%;
     }
 
   }
