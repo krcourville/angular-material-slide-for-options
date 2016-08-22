@@ -1,0 +1,38 @@
+.swipe-options-container {
+  position: relative;
+  overflow: hidden;
+
+  .swipe-content {
+    position: relative;
+    transition: 0.5s ease-in-out;
+
+    &.options-shown {
+      transform: translateX(-50%);
+    }
+  }
+
+  .swipe-options {
+    color: white;
+    transition: 0.5s ease-in-out;
+    height: 100%;
+    width: 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &, * {
+      white-space: nowrap;
+    }
+
+    &.options-shown {
+      width: 50%;
+    }
+
+    swipe-options {
+      height: 100%;
+    }
+
+  }
+
+}

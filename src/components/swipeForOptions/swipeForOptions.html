@@ -1,0 +1,16 @@
+<div class="swipe-options-container">
+    <div class="swipe-content"
+         ng-class="$ctrl.optionsShowClass"
+         md-swipe-right="$ctrl.showOptions(false)"
+         md-swipe-left="$ctrl.showOptions(true)"
+         ng-transclude="content"
+        >
+    </div>
+
+    <div class="swipe-options"
+         ng-class="$ctrl.optionsShowClass"
+         md-swipe-right="$ctrl.showOptions(false)"
+         ng-transclude="options"
+    >
+    </div>
+</div>
